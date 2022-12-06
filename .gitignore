@@ -1,0 +1,9 @@
+__pycache__
+*.pyc
+/.coverage
+/.pytest_cache
+/.envrc.local
+/frontend/.vite
+/node_modules
+/static/dist/*
+/result

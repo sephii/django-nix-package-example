@@ -1,0 +1,8 @@
+[run]
+source = example_project
+omit =
+    */migrations/*
+    */tests/*
+    */test_*.py
+    */tests.py
+    example_project/config/*
