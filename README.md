@@ -47,4 +47,4 @@ server-front
 
 ## Deploying it
 
-Check out the django.nix example to see how this project can be deployed on NixOS.
+Check out the [django.nix example](https://github.com/sephii/django.nix-example) to see how this project can be deployed on NixOS.
