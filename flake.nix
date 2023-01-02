@@ -15,7 +15,7 @@
 
         # The overlay allows to add this package to the `pkgs` of another flake like so:
         # pkgs = import nixpkgs {
-        #   overlays = [ thisFlake.overlay ];
+        #   overlays = [ thisFlake.overlays.${system}.default ];
         # };
         overlay = (final: prev: {
           example_project = (final.callPackage ./. { }) // {
@@ -42,7 +42,7 @@
           program = "${drv}/bin/${drv.name}";
         };
       in rec {
-        inherit overlay;
+        overlays.default = overlay;
 
         apps.default = mkApp pkgs.example_project.dev;
 
